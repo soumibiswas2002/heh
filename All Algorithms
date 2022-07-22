@@ -1,0 +1,88 @@
+BINARY SEARCH
+---------------
+Binary_Search(a, lower_bound, upper_bound, val) // 'a' is the given array, 'lower_bound' is the index of the first array element, 'upper_bound' is the index of the last array element, 'val' is the value to search  
+Step 1: set beg = lower_bound, end = upper_bound, pos = - 1  
+Step 2: repeat steps 3 and 4 while beg <=end  
+Step 3: set mid = (beg + end)/2  
+Step 4: if a[mid] = val  
+set pos = mid  
+print pos  
+go to step 6  
+else if a[mid] > val  
+set end = mid - 1  
+else  
+set beg = mid + 1  
+[end of if]  
+[end of loop]  
+Step 5: if pos = -1  
+print "value is not present in the array"  
+[end of if]  
+Step 6: exit 
+
+LINEAR SEARCH
+---------------
+    Linear_Search(a, n, val) // 'a' is the given array, 'n' is the size of given array, 'val' is the value to search  
+    Step 1: set pos = -1  
+    Step 2: set i = 1  
+    Step 3: repeat step 4 while i <= n  
+    Step 4: if a[i] == val  
+    set pos = i  
+    print pos  
+    go to step 6  
+    [end of if]  
+    set ii = i + 1  
+    [end of loop]  
+    Step 5: if pos = -1  
+    print "value is not present in the array "  
+    [end of if]  
+    Step 6: exit  
+    
+  QUICK SORT
+---------------
+    QUICKSORT (array A, start, end)     
+    {  
+     1 if (start < end)     
+     2 {  
+    3 p = partition(A, start, end)  
+    4 QUICKSORT (A, start, p - 1)    
+    5 QUICKSORT (A, p + 1, end)    
+    6 }   
+    }  
+    
+        PARTITION (array A, start, end)     
+    {  
+     1 pivot ? A[end]     
+     2 i ? start-1     
+     3 for j ? start to end -1 {  
+     4 do if (A[j] < pivot) {    
+     5 then i ? i + 1     
+     6 swap A[i] with A[j]   
+     7  }}   
+     8 swap A[i+1] with A[end]     
+     9 return i+1  
+    }  
+    
+   MERGE SORT
+---------------
+    MERGE_SORT(arr, beg, end)  
+      
+    if beg < end  
+    set mid = (beg + end)/2  
+    MERGE_SORT(arr, beg, mid)  
+    MERGE_SORT(arr, mid + 1, end)  
+    MERGE (arr, beg, mid, end)  
+    end of if  
+      
+    END MERGE_SORT  
+    
+   BUBBLE SORT
+---------------
+begin BubbleSort(arr)  
+   for all array elements  
+      if arr[i] > arr[i+1]  
+         swap(arr[i], arr[i+1])  
+      end if  
+   end for     
+   return arr     
+end BubbleSort
+
