@@ -19,6 +19,16 @@ print "value is not present in the array"
 [end of if]  
 Step 6: exit 
 
+Q. Worst case tc of binary search.
+Ans. The worst case of Binary Search occurs when:
+
+    The element is to search is in the first index or last index
+
+In this case, the total number of comparisons required is logN comparisons.
+
+Therefore, Worst Case Time Complexity of Binary Search is O(logN).
+
+
 LINEAR SEARCH
 ---------------
     Linear_Search(a, n, val) // 'a' is the given array, 'n' is the size of given array, 'val' is the value to search  
